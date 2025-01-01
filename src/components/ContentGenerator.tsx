@@ -161,7 +161,9 @@ const ContentGenerator: React.FC = () => {
             keywords: any[];
             blogData: BlogData[];
             sitemaps: string[];
-            competitorPages: Array<[string, string]>;
+            competitorPages: {
+                [url: string]: string;
+            };
         }) => {
         const skinNameRegex = /([A-Za-z0-9-]+)\s*\|\s*([A-Za-z0-9-]+)/;
         const weaponTypes = ['AK-47', 'M4A4', 'M4A1-S', 'AWP', 'Desert Eagle', 'USP-S', 'Glock-18', 'MAG-7'];
